@@ -46,6 +46,9 @@ fp-info-cache
 !.vscode/tasks.json
 !.vscode/extensions.json
 
+# VSCode / VSCodium workspace file
+*.code-workspace
+
 # JetBrains
 .idea/
 

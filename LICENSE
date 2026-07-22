@@ -1,0 +1,12 @@
+This project uses multiple licenses to appropriately cover its different
+components:
+
+  firmware/   -> GNU General Public License v3.0 or later (see firmware/LICENSE)
+  hardware/   -> CERN Open Hardware Licence v2 – Strongly Reciprocal
+                 (see hardware/LICENSE)
+  docs/       -> Creative Commons Attribution-ShareAlike 4.0 International
+                 (see docs/LICENSE)
+
+See the README for details.
+
+Copyright © 2026  Jan Vodstrčil

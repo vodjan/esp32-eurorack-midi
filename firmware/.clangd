@@ -1,0 +1,23 @@
+CompileFlags:
+  BuiltinHeaders: QueryDriver
+  # GCC/Xtensa-specific flags that clang does not recognize. Removing them here
+  # only affects clangd linting; PlatformIO still passes them to GCC at build time.
+  Remove:
+    - -mlongcalls
+    - -mdisable-hardware-atomics
+    - -mfix-esp32-psram-cache-issue
+    - -mfix-esp32-psram-cache-strategy=*
+    - -fstrict-volatile-bitfields
+    - -fno-tree-switch-conversion
+    - -fno-shrink-wrap
+Diagnostics:
+  Suppress: [pp_expects_filename, unused-includes]
+---
+If:
+  PathMatch: .*\.ino
+CompileFlags:
+  Add:
+    - "-x"
+    - "c++"
+    - "-include"
+    - "Arduino.h"

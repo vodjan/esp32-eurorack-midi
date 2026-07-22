@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "esp32-eurorack-midi",
+            "path": "."
+        },
+        {
+            "name": "firmware (PlatformIO)",
+            "path": "firmware"
+        }
+    ],
+    "settings": {
+        "platformio-ide.activateOnlyOnPlatformIOProject": true
+    },
+    "extensions": {
+        "recommendations": [
+            "platformio.platformio-ide"
+        ]
+    }
+}

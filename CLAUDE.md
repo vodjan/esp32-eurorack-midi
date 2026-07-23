@@ -2,6 +2,10 @@
 
 Project-level instructions for Claude Code. These apply to all contributors working on a clone, regardless of personal config.
 
+## Architecture
+
+The hardware and firmware design lives in `docs/midi_cv_architecture.md`. Read it before making firmware changes - it defines the FreeRTOS task structure, the MIDI routing table (`routing_table_t`), DAC output mapping, NVS persistence, and the phased development plan. The firmware targets ESP-IDF + FreeRTOS in C, built with pioarduino (`framework = espidf`).
+
 ## Writing conventions
 
 These apply to everything Claude produces in this project: code, comments, docstrings, markdown, log entries, chat output. They duplicate the user-level preferences at `~/.claude/CLAUDE.md` so the rules travel with the repository and apply even to anyone working on a clone with a different personal config.
